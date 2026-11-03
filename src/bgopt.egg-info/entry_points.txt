@@ -1,0 +1,2 @@
+[console_scripts]
+bgopt = bgopt.cli:main
