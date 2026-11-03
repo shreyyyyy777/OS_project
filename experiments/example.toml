@@ -1,0 +1,18 @@
+[experiment]
+id = "fg_web_bg_compile_001"
+scenario = "web_browsing_plus_kernel_compile"
+repetitions = 5
+
+[foreground]
+role = "foreground"
+description = "Use the built-in fixed-interval scheduler-lag probe; Firefox may remain open as a demonstration workload."
+command = ".venv/bin/bgopt run-evaluation --mode linux_default --repetition 1"
+
+[background]
+role = "background"
+resource_label = "cpu_intensive"
+description = "Use a disposable source-tree compilation on the Linux test host."
+command = "work/compile_workload/workload (started and awaited naturally by run-evaluation)"
+
+[baselines]
+names = ["linux_default", "static_nice_plus_5", "bgopt_heuristic", "bgopt_ml_assisted"]
