@@ -1,0 +1,27 @@
+# BGOpt's policy is intentionally conservative. All controller runs are dry-run
+# unless the command has --apply and the per-action guard flags.
+
+[collection]
+current_user_only = true
+exclude_process_names = ["bgopt", "python", "python3", "gnome-shell", "pipewire"]
+
+[policy]
+cpu_pressure_threshold = 0.65
+protected_process_names = ["firefox"]
+protect_descendants = true
+memory_pressure_threshold = 0.75
+candidate_cpu_percent = 5.0
+nice_increment = 5
+severe_nice_increment = 10
+severe_pressure_threshold = 0.85
+max_nice = 19
+enable_cgroup_suggestions = false
+cgroup_cpu_weight = 50
+enable_cpu_limit_suggestions = false
+cpu_limit_quota_percent = 50
+
+[fairness]
+cooldown_seconds = 30
+max_intervention_seconds = 300
+max_interventions_per_pid = 3
+restoration_cpu_threshold = 0.35
