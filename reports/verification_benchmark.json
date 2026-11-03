@@ -1,0 +1,9 @@
+{
+  "events": 0,
+  "action_counts": {},
+  "result_counts": {},
+  "workload_label_counts": {},
+  "pressure_level_counts": {},
+  "non_noop_proposals_under_medium_or_high_pressure": 0,
+  "interpretation": "This is an audit/coverage report, not a performance claim. Compare matched baseline and treatment trials using your project-owned completion and foreground-latency outcomes."
+}

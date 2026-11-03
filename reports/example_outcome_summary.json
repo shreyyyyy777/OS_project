@@ -1,0 +1,5 @@
+{
+  "runs": 20,
+  "metrics": {},
+  "warning": "Summary statistics describe supplied measurements only; they are not evidence of improvement until matched completed repetitions exist."
+}

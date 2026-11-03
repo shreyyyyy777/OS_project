@@ -1,0 +1,270 @@
+{
+  "dataset_dir": "/mnt/hgfs/Documents/OS paper/LAPS-Code&Dataset/dataset",
+  "feature_shape": [
+    459481,
+    150
+  ],
+  "metadata_shape": [
+    459481,
+    3
+  ],
+  "feature_names_count": 150,
+  "metadata_columns": [
+    "label",
+    "vm_identifier",
+    "group"
+  ],
+  "feature_order_matches_feature_names_json": true,
+  "feature_map_count": 150,
+  "feature_map_set_matches_dataset": true,
+  "feature_family_counts": {
+    "cpu_and_load": 37,
+    "disk_io": 27,
+    "memory": 7,
+    "network_and_interrupts": 34,
+    "process_and_interaction": 11,
+    "scheduling_and_latency": 34
+  },
+  "label_count": 28,
+  "label_counts": {
+    "audio_remix_archive_extraction": 7208,
+    "audio_remix_blender_render": 12885,
+    "audio_remix_kernel_compile": 20581,
+    "audio_remix_llm_generate": 17066,
+    "audio_remix_mixed_io": 11080,
+    "audio_remix_network_intensive": 10499,
+    "audio_remix_video_render": 9908,
+    "game_play_archive_extraction": 12146,
+    "game_play_blender_render": 23469,
+    "game_play_kernel_compile": 39090,
+    "game_play_llm_generate": 39759,
+    "game_play_mixed_io": 10762,
+    "game_play_network_intensive": 10218,
+    "game_play_video_render": 15987,
+    "office_file_archive_extraction": 7585,
+    "office_file_blender_render": 13936,
+    "office_file_kernel_compile": 22240,
+    "office_file_llm_generate": 20337,
+    "office_file_mixed_io": 12079,
+    "office_file_network_intensive": 10455,
+    "office_file_video_render": 10664,
+    "web_browsing_archive_extraction": 9874,
+    "web_browsing_blender_render": 19560,
+    "web_browsing_kernel_compile": 32825,
+    "web_browsing_llm_generate": 24760,
+    "web_browsing_mixed_io": 11167,
+    "web_browsing_network_intensive": 10300,
+    "web_browsing_video_render": 13041
+  },
+  "vm_counts": {
+    "vm_1": 66010,
+    "vm_10": 25449,
+    "vm_2": 66352,
+    "vm_3": 36990,
+    "vm_4": 37076,
+    "vm_5": 52676,
+    "vm_6": 103096,
+    "vm_7": 23267,
+    "vm_8": 23682,
+    "vm_9": 24883
+  },
+  "scene_reference": [
+    {
+      "laps_scene_label": "audio_remix_archive_extraction",
+      "foreground_context": "audio_remix",
+      "paired_workload": "archive_extraction",
+      "provisional_resource_hint": "cpu_and_io",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "audio_remix_blender_render",
+      "foreground_context": "audio_remix",
+      "paired_workload": "blender_render",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "audio_remix_kernel_compile",
+      "foreground_context": "audio_remix",
+      "paired_workload": "kernel_compile",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "audio_remix_llm_generate",
+      "foreground_context": "audio_remix",
+      "paired_workload": "llm_generate",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "audio_remix_mixed_io",
+      "foreground_context": "audio_remix",
+      "paired_workload": "mixed_io",
+      "provisional_resource_hint": "io_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "audio_remix_network_intensive",
+      "foreground_context": "audio_remix",
+      "paired_workload": "network_intensive",
+      "provisional_resource_hint": "network_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "audio_remix_video_render",
+      "foreground_context": "audio_remix",
+      "paired_workload": "video_render",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "game_play_archive_extraction",
+      "foreground_context": "game_play",
+      "paired_workload": "archive_extraction",
+      "provisional_resource_hint": "cpu_and_io",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "game_play_blender_render",
+      "foreground_context": "game_play",
+      "paired_workload": "blender_render",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "game_play_kernel_compile",
+      "foreground_context": "game_play",
+      "paired_workload": "kernel_compile",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "game_play_llm_generate",
+      "foreground_context": "game_play",
+      "paired_workload": "llm_generate",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "game_play_mixed_io",
+      "foreground_context": "game_play",
+      "paired_workload": "mixed_io",
+      "provisional_resource_hint": "io_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "game_play_network_intensive",
+      "foreground_context": "game_play",
+      "paired_workload": "network_intensive",
+      "provisional_resource_hint": "network_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "game_play_video_render",
+      "foreground_context": "game_play",
+      "paired_workload": "video_render",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "office_file_archive_extraction",
+      "foreground_context": "office_file",
+      "paired_workload": "archive_extraction",
+      "provisional_resource_hint": "cpu_and_io",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "office_file_blender_render",
+      "foreground_context": "office_file",
+      "paired_workload": "blender_render",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "office_file_kernel_compile",
+      "foreground_context": "office_file",
+      "paired_workload": "kernel_compile",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "office_file_llm_generate",
+      "foreground_context": "office_file",
+      "paired_workload": "llm_generate",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "office_file_mixed_io",
+      "foreground_context": "office_file",
+      "paired_workload": "mixed_io",
+      "provisional_resource_hint": "io_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "office_file_network_intensive",
+      "foreground_context": "office_file",
+      "paired_workload": "network_intensive",
+      "provisional_resource_hint": "network_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "office_file_video_render",
+      "foreground_context": "office_file",
+      "paired_workload": "video_render",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "web_browsing_archive_extraction",
+      "foreground_context": "web_browsing",
+      "paired_workload": "archive_extraction",
+      "provisional_resource_hint": "cpu_and_io",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "web_browsing_blender_render",
+      "foreground_context": "web_browsing",
+      "paired_workload": "blender_render",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "web_browsing_kernel_compile",
+      "foreground_context": "web_browsing",
+      "paired_workload": "kernel_compile",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "web_browsing_llm_generate",
+      "foreground_context": "web_browsing",
+      "paired_workload": "llm_generate",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "web_browsing_mixed_io",
+      "foreground_context": "web_browsing",
+      "paired_workload": "mixed_io",
+      "provisional_resource_hint": "io_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "web_browsing_network_intensive",
+      "foreground_context": "web_browsing",
+      "paired_workload": "network_intensive",
+      "provisional_resource_hint": "network_intensive",
+      "human_review_required": true
+    },
+    {
+      "laps_scene_label": "web_browsing_video_render",
+      "foreground_context": "web_browsing",
+      "paired_workload": "video_render",
+      "provisional_resource_hint": "compute_intensive",
+      "human_review_required": true
+    }
+  ],
+  "reuse_boundary": "The 28 LAPS scene labels and 150 BPF-derived inputs may inform feature and workload-taxonomy design, but cannot train BGOpt's per-process action controller directly. BGOpt must collect its own psutil-compatible features, process-behaviour labels, and action outcomes."
+}

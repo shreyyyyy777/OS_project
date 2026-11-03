@@ -1,0 +1,534 @@
+{
+  "baseline_comparisons": {
+    "bgopt_heuristic": {
+      "scheduler_lag_p95_ms": {
+        "mean_percent_change": -0.3847898092200541,
+        "median_percent_change": -0.02709616023659489
+      },
+      "workload_completion_s": {
+        "mean_percent_change": 4.104687533640683,
+        "median_percent_change": 4.991089793024983
+      }
+    },
+    "bgopt_ml_assisted": {
+      "scheduler_lag_p95_ms": {
+        "mean_percent_change": -64.3942197662587,
+        "median_percent_change": -64.86057624573274
+      },
+      "workload_completion_s": {
+        "mean_percent_change": 8.80068621702883,
+        "median_percent_change": 9.529239305998626
+      }
+    },
+    "static_nice_plus_5": {
+      "scheduler_lag_p95_ms": {
+        "mean_percent_change": 2.4563483471593317,
+        "median_percent_change": 2.839272973824558
+      },
+      "workload_completion_s": {
+        "mean_percent_change": -1.944684841463784,
+        "median_percent_change": -0.9588924467880289
+      }
+    }
+  },
+  "experiment_id": "fg_web_bg_compile_001",
+  "per_mode": {
+    "bgopt_heuristic": {
+      "label": "BGOpt Heuristic",
+      "metrics": {
+        "controller_iterations": {
+          "cv": 0.010246160498318424,
+          "max": 545.0,
+          "mean": 539.0,
+          "median": 540.0,
+          "min": 530.0,
+          "n": 5,
+          "stdev": 5.522680508593631
+        },
+        "host_cpu_max": {
+          "cv": 0.0828119753955091,
+          "max": 65.0,
+          "mean": 57.06,
+          "median": 55.6,
+          "min": 52.6,
+          "n": 5,
+          "stdev": 4.725251316067749
+        },
+        "host_cpu_mean": {
+          "cv": 0.006037275079192911,
+          "max": 39.87884267631103,
+          "mean": 39.53509591915459,
+          "median": 39.534124087591245,
+          "min": 39.213211009174316,
+          "n": 5,
+          "stdev": 0.23868424934621338
+        },
+        "load_norm_max": {
+          "cv": 0.24733503414108848,
+          "max": 0.59033203125,
+          "mean": 0.4638671875,
+          "median": 0.5006103515625,
+          "min": 0.2919921875,
+          "n": 5,
+          "stdev": 0.11473060665724319
+        },
+        "load_norm_mean": {
+          "cv": 0.25815375696779436,
+          "max": 0.5583598561530566,
+          "mean": 0.4399185766577998,
+          "median": 0.4697603360222649,
+          "min": 0.2636584381559002,
+          "n": 5,
+          "stdev": 0.11356663332413568
+        },
+        "nice_actions_applied": {
+          "cv": 0,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "probe_sample_count": {
+          "cv": 0.01139782412238607,
+          "max": 553.0,
+          "mean": 545.8,
+          "median": 547.0,
+          "min": 536.0,
+          "n": 5,
+          "stdev": 6.220932405998316
+        },
+        "rejected_action_count": {
+          "cv": 0,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "scheduler_lag_max_ms": {
+          "cv": 1.0712676606940283,
+          "max": 10.835598923677026,
+          "mean": 3.7838729761460854,
+          "median": 1.7362889934702253,
+          "min": 1.1656590077109286,
+          "n": 5,
+          "stdev": 4.0535407515193675
+        },
+        "scheduler_lag_p50_ms": {
+          "cv": 0.08347862480530793,
+          "max": 0.28281450920530915,
+          "mean": 0.24853946445091424,
+          "median": 0.24680697652001982,
+          "min": 0.22783195049669303,
+          "n": 5,
+          "stdev": 0.020747732702210038
+        },
+        "scheduler_lag_p95_ms": {
+          "cv": 0.0036130448146292904,
+          "max": 1.0930203891803103,
+          "mean": 1.0875922273407923,
+          "median": 1.0856372566649952,
+          "min": 1.0837679242285958,
+          "n": 5,
+          "stdev": 0.00392951945742477
+        },
+        "workload_completion_s": {
+          "cv": 0.011223939978320894,
+          "max": 27.651466142999652,
+          "mean": 27.297107727199865,
+          "median": 27.351576185999875,
+          "min": 26.816284494,
+          "n": 5,
+          "stdev": 0.30638109871185076
+        }
+      },
+      "ml_predictions": {
+        "background_cpu": 2986,
+        "background_io": 304,
+        "idle": 188042,
+        "interactive": 8085
+      }
+    },
+    "bgopt_ml_assisted": {
+      "label": "BGOpt ML-Assisted",
+      "metrics": {
+        "controller_iterations": {
+          "cv": 0.0,
+          "max": 2.0,
+          "mean": 2.0,
+          "median": 2.0,
+          "min": 2.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "host_cpu_max": {
+          "cv": 0.0,
+          "max": 100.0,
+          "mean": 100.0,
+          "median": 100.0,
+          "min": 100.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "host_cpu_mean": {
+          "cv": 0.001028703016928998,
+          "max": 95.89666080843585,
+          "mean": 95.75933172824274,
+          "median": 95.75925925925925,
+          "min": 95.62077464788732,
+          "n": 5,
+          "stdev": 0.09850791344794804
+        },
+        "load_norm_max": {
+          "cv": 0.10575048821148009,
+          "max": 0.8101806640625,
+          "mean": 0.72021484375,
+          "median": 0.7384033203125,
+          "min": 0.630126953125,
+          "n": 5,
+          "stdev": 0.07616307134371735
+        },
+        "load_norm_mean": {
+          "cv": 0.1509893123346563,
+          "max": 0.6840234632441784,
+          "mean": 0.5911925591168377,
+          "median": 0.6114622516396605,
+          "min": 0.4664755018398506,
+          "n": 5,
+          "stdev": 0.08926375795841696
+        },
+        "nice_actions_applied": {
+          "cv": 0,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "probe_sample_count": {
+          "cv": 0.0020052328967624655,
+          "max": 570.0,
+          "mean": 568.6,
+          "median": 569.0,
+          "min": 567.0,
+          "n": 5,
+          "stdev": 1.140175425099138
+        },
+        "rejected_action_count": {
+          "cv": 0.0,
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "scheduler_lag_max_ms": {
+          "cv": 1.0726668760834803,
+          "max": 29.858077944936667,
+          "mean": 11.82774096923822,
+          "median": 3.4152679991166224,
+          "min": 2.262417966448993,
+          "n": 5,
+          "stdev": 12.687225956597358
+        },
+        "scheduler_lag_p50_ms": {
+          "cv": 0.19968587653045272,
+          "max": 0.1831109889280924,
+          "mean": 0.16316896017087856,
+          "median": 0.17452795373174013,
+          "min": 0.10537698972257203,
+          "n": 5,
+          "stdev": 0.032582536834284415
+        },
+        "scheduler_lag_p95_ms": {
+          "cv": 0.058829670344535935,
+          "max": 0.41550658161213505,
+          "mean": 0.3887415361214152,
+          "median": 0.3815900723111551,
+          "min": 0.363107380007932,
+          "n": 5,
+          "stdev": 0.022869536419251366
+        },
+        "workload_completion_s": {
+          "cv": 0.0026741228413558016,
+          "max": 28.640136769000037,
+          "mean": 28.52843731460016,
+          "median": 28.533824530999937,
+          "min": 28.451083065000148,
+          "n": 5,
+          "stdev": 0.07628854585115946
+        }
+      },
+      "ml_predictions": {
+        "background_cpu": 10,
+        "interactive": 40,
+        "io_heavy": 685
+      }
+    },
+    "linux_default": {
+      "label": "Linux Default",
+      "metrics": {
+        "controller_iterations": {
+          "cv": 0,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "host_cpu_max": {
+          "cv": 0.1429377261460973,
+          "max": 47.6,
+          "mean": 40.34,
+          "median": 39.1,
+          "min": 35.0,
+          "n": 5,
+          "stdev": 5.766107872733565
+        },
+        "host_cpu_mean": {
+          "cv": 0.0038484328778874096,
+          "max": 25.385157699443415,
+          "mean": 25.226266244005426,
+          "median": 25.219444444444445,
+          "min": 25.128073394495413,
+          "n": 5,
+          "stdev": 0.09708159239977182
+        },
+        "load_norm_max": {
+          "cv": 0.40384230130437326,
+          "max": 0.8101806640625,
+          "mean": 0.608154296875,
+          "median": 0.7384033203125,
+          "min": 0.22509765625,
+          "n": 5,
+          "stdev": 0.24559843079814303
+        },
+        "load_norm_mean": {
+          "cv": 0.37630157972834094,
+          "max": 0.7017831224913991,
+          "mean": 0.5399330548972234,
+          "median": 0.6328070645871985,
+          "min": 0.218841552734375,
+          "n": 5,
+          "stdev": 0.2031776615053742
+        },
+        "nice_actions_applied": {
+          "cv": 0,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "probe_sample_count": {
+          "cv": 0.03296306702720351,
+          "max": 545.0,
+          "mean": 524.4,
+          "median": 521.0,
+          "min": 504.0,
+          "n": 5,
+          "stdev": 17.28583234906552
+        },
+        "rejected_action_count": {
+          "cv": 0,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "scheduler_lag_max_ms": {
+          "cv": 1.8505391517025243,
+          "max": 51.03898992638278,
+          "mean": 11.864746348646804,
+          "median": 1.1800089173448214,
+          "min": 1.1298490001081518,
+          "n": 5,
+          "stdev": 21.95617764319048
+        },
+        "scheduler_lag_p50_ms": {
+          "cv": 0.00761399840897771,
+          "max": 1.0670899036995252,
+          "mean": 1.0603597544559307,
+          "median": 1.0644950132245867,
+          "min": 1.048531933065533,
+          "n": 5,
+          "stdev": 0.00807357748337145
+        },
+        "scheduler_lag_p95_ms": {
+          "cv": 0.014481781723971843,
+          "max": 1.1146101798203745,
+          "mean": 1.0917933368386912,
+          "median": 1.0859315024049465,
+          "min": 1.0735767574260535,
+          "n": 5,
+          "stdev": 0.015811112791784793
+        },
+        "workload_completion_s": {
+          "cv": 0.03295906459088605,
+          "max": 27.2502226900001,
+          "mean": 26.220824800400077,
+          "median": 26.05133087000013,
+          "min": 25.200309809999908,
+          "n": 5,
+          "stdev": 0.864213858222693
+        }
+      },
+      "ml_predictions": {}
+    },
+    "static_nice_plus_5": {
+      "label": "Static Nice +5",
+      "metrics": {
+        "controller_iterations": {
+          "cv": 0,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "host_cpu_max": {
+          "cv": 0.0339624980409164,
+          "max": 40.9,
+          "mean": 39.04,
+          "median": 38.1,
+          "min": 38.1,
+          "n": 5,
+          "stdev": 1.3258959235173764
+        },
+        "host_cpu_mean": {
+          "cv": 0.003997878764138167,
+          "max": 25.396584440227706,
+          "mean": 25.234123754548566,
+          "median": 25.206150793650792,
+          "min": 25.133794466403163,
+          "n": 5,
+          "stdev": 0.10088296748994417
+        },
+        "load_norm_max": {
+          "cv": 0.3406970078128363,
+          "max": 0.630126953125,
+          "mean": 0.488427734375,
+          "median": 0.545654296875,
+          "min": 0.2337646484375,
+          "n": 5,
+          "stdev": 0.1664058676343653
+        },
+        "load_norm_mean": {
+          "cv": 0.3079553699036414,
+          "max": 0.5548904773800872,
+          "mean": 0.44004044866595615,
+          "median": 0.4947016388460626,
+          "min": 0.2297905815972222,
+          "n": 5,
+          "stdev": 0.13551281914148885
+        },
+        "nice_actions_applied": {
+          "cv": 0.0,
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "probe_sample_count": {
+          "cv": 0.018264265860558376,
+          "max": 527.0,
+          "mean": 514.2,
+          "median": 516.0,
+          "min": 504.0,
+          "n": 5,
+          "stdev": 9.391485505499118
+        },
+        "rejected_action_count": {
+          "cv": 0,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "scheduler_lag_max_ms": {
+          "cv": 1.2497557115528928,
+          "max": 16.717393967155658,
+          "mean": 5.385591169624604,
+          "median": 1.4060779931241996,
+          "min": 1.1452000182998745,
+          "n": 5,
+          "stdev": 6.730673324327173
+        },
+        "scheduler_lag_p50_ms": {
+          "cv": 0.017402068754214885,
+          "max": 1.1002039914274064,
+          "mean": 1.0742774765503782,
+          "median": 1.0724939284045831,
+          "min": 1.0497339949324669,
+          "n": 5,
+          "stdev": 0.01869465050803415
+        },
+        "scheduler_lag_p95_ms": {
+          "cv": 0.011023961747206932,
+          "max": 1.1363207072008663,
+          "mean": 1.1186115844225242,
+          "median": 1.1167640620669772,
+          "min": 1.1022324331406708,
+          "n": 5,
+          "stdev": 0.012331531316656444
+        },
+        "workload_completion_s": {
+          "cv": 0.01826277569692787,
+          "max": 26.350845943999957,
+          "mean": 25.71091239519992,
+          "median": 25.80152662599994,
+          "min": 25.200867875999847,
+          "n": 5,
+          "stdev": 0.4695526260368986
+        }
+      },
+      "ml_predictions": {}
+    }
+  },
+  "run_order": [
+    "linux_default",
+    "static_nice_plus_5",
+    "bgopt_heuristic",
+    "bgopt_ml_assisted",
+    "static_nice_plus_5",
+    "bgopt_heuristic",
+    "bgopt_ml_assisted",
+    "linux_default",
+    "bgopt_heuristic",
+    "bgopt_ml_assisted",
+    "linux_default",
+    "static_nice_plus_5",
+    "bgopt_ml_assisted",
+    "linux_default",
+    "static_nice_plus_5",
+    "bgopt_heuristic",
+    "linux_default",
+    "bgopt_heuristic",
+    "static_nice_plus_5",
+    "bgopt_ml_assisted"
+  ],
+  "safety_audit": {
+    "all_applied_targets_match_workload_identity": true,
+    "all_workloads_exit_zero": true,
+    "applied_actions_total": 5,
+    "cgroup_changes": false,
+    "processes_killed": false,
+    "rejected_actions_total": 5,
+    "scheduler_changes": false
+  },
+  "valid_runs": 20
+}

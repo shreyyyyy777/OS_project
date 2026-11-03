@@ -1,0 +1,235 @@
+{
+  "feature_names": [
+    "host_cpu_percent",
+    "host_load_1_norm",
+    "host_memory_percent",
+    "host_memory_available_mb",
+    "host_swap_percent",
+    "host_disk_busy_mb_s",
+    "proc_cpu_percent",
+    "proc_memory_percent",
+    "proc_rss_mb",
+    "proc_threads",
+    "proc_open_files",
+    "proc_read_mb_s",
+    "proc_write_mb_s",
+    "proc_ctx_switches_s",
+    "proc_age_s",
+    "is_terminal_bound",
+    "parent_is_shell",
+    "is_interactive_hint"
+  ],
+  "classes": [
+    "background_cpu",
+    "idle",
+    "interactive",
+    "io_heavy",
+    "memory_heavy"
+  ],
+  "model_kind": "hist_gradient_boosting",
+  "split_strategy": "grouped_per_class",
+  "group_column": "group",
+  "rows": {
+    "train": 256,
+    "validation": 40,
+    "test": 40
+  },
+  "class_counts": {
+    "background_cpu": 80,
+    "idle": 64,
+    "interactive": 64,
+    "memory_heavy": 64,
+    "io_heavy": 64
+  },
+  "test": {
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "labels": [
+      "background_cpu",
+      "idle",
+      "interactive",
+      "io_heavy",
+      "memory_heavy"
+    ],
+    "confusion_matrix": [
+      [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        8
+      ]
+    ],
+    "classification_report": {
+      "background_cpu": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "idle": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "interactive": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "io_heavy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "memory_heavy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      }
+    }
+  },
+  "validation": {
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "labels": [
+      "background_cpu",
+      "idle",
+      "interactive",
+      "io_heavy",
+      "memory_heavy"
+    ],
+    "confusion_matrix": [
+      [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        8
+      ]
+    ],
+    "classification_report": {
+      "background_cpu": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "idle": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "interactive": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "io_heavy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "memory_heavy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      }
+    }
+  },
+  "leakage_warning": "No experiment/scenario/group split was possible. This row-level result is a development check, not a research claim."
+}

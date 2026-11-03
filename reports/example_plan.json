@@ -1,0 +1,181 @@
+{
+  "experiment": {
+    "id": "fg_web_bg_compile_001",
+    "scenario": "web_browsing_plus_kernel_compile",
+    "repetitions": 5
+  },
+  "foreground": {
+    "role": "foreground",
+    "description": "Interact with a browser or a scripted latency probe. Record latency separately; BGOpt does not invent it.",
+    "command": "REPLACE_WITH_REVIEWED_FOREGROUND_COMMAND"
+  },
+  "background": {
+    "role": "background",
+    "resource_label": "cpu_intensive",
+    "description": "Use a disposable source-tree compilation on the Linux test host.",
+    "command": "REPLACE_WITH_REVIEWED_BACKGROUND_COMMAND"
+  },
+  "runs": [
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "linux_default",
+      "run_id": "linux_default-01",
+      "status": "planned",
+      "dry_run_required": false
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "linux_default",
+      "run_id": "linux_default-02",
+      "status": "planned",
+      "dry_run_required": false
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "linux_default",
+      "run_id": "linux_default-03",
+      "status": "planned",
+      "dry_run_required": false
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "linux_default",
+      "run_id": "linux_default-04",
+      "status": "planned",
+      "dry_run_required": false
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "linux_default",
+      "run_id": "linux_default-05",
+      "status": "planned",
+      "dry_run_required": false
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "static_nice_plus_5",
+      "run_id": "static_nice_plus_5-01",
+      "status": "planned",
+      "dry_run_required": false
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "static_nice_plus_5",
+      "run_id": "static_nice_plus_5-02",
+      "status": "planned",
+      "dry_run_required": false
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "static_nice_plus_5",
+      "run_id": "static_nice_plus_5-03",
+      "status": "planned",
+      "dry_run_required": false
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "static_nice_plus_5",
+      "run_id": "static_nice_plus_5-04",
+      "status": "planned",
+      "dry_run_required": false
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "static_nice_plus_5",
+      "run_id": "static_nice_plus_5-05",
+      "status": "planned",
+      "dry_run_required": false
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "bgopt_heuristic",
+      "run_id": "bgopt_heuristic-01",
+      "status": "planned",
+      "dry_run_required": true
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "bgopt_heuristic",
+      "run_id": "bgopt_heuristic-02",
+      "status": "planned",
+      "dry_run_required": true
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "bgopt_heuristic",
+      "run_id": "bgopt_heuristic-03",
+      "status": "planned",
+      "dry_run_required": true
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "bgopt_heuristic",
+      "run_id": "bgopt_heuristic-04",
+      "status": "planned",
+      "dry_run_required": true
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "bgopt_heuristic",
+      "run_id": "bgopt_heuristic-05",
+      "status": "planned",
+      "dry_run_required": true
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "bgopt_ml_assisted",
+      "run_id": "bgopt_ml_assisted-01",
+      "status": "planned",
+      "dry_run_required": true
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "bgopt_ml_assisted",
+      "run_id": "bgopt_ml_assisted-02",
+      "status": "planned",
+      "dry_run_required": true
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "bgopt_ml_assisted",
+      "run_id": "bgopt_ml_assisted-03",
+      "status": "planned",
+      "dry_run_required": true
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "bgopt_ml_assisted",
+      "run_id": "bgopt_ml_assisted-04",
+      "status": "planned",
+      "dry_run_required": true
+    },
+    {
+      "experiment_id": "fg_web_bg_compile_001",
+      "scenario": "web_browsing_plus_kernel_compile",
+      "baseline": "bgopt_ml_assisted",
+      "run_id": "bgopt_ml_assisted-05",
+      "status": "planned",
+      "dry_run_required": true
+    }
+  ],
+  "safety_note": "This is a plan only. Commands are recorded for review and are not executed by BGOpt."
+}
